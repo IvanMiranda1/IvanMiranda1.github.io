@@ -1,0 +1,89 @@
+:root {
+    --darkgrayishblue: #1F2233;
+    --grayishblue: #25273e;
+    --red: #fd6069;
+}
+
+/* Estilos Generales */
+
+* {
+    color: #dddddd;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+a {
+    color: #dddddd;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+body {
+    background-color: var(--darkgrayishblue);
+}
+
+/* HEADER */
+
+
+.icon-container {
+    font-size: 50px;
+}
+
+#menu {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+}
+
+/* NAV */
+
+
+
+.nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 75px;
+    padding: 20px 0;
+    background-color: #00000070;
+}
+
+nav.active.nav {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-evenly;
+}
+
+nav ul li a:hover,
+nav ul li button:hover{
+    color: #ffffff;
+}
+
+/* Home */
+
+.home-container {
+    border-right: 1px solid var(--red);
+}
+
+.titulo {
+    font-weight: normal;
+    letter-spacing: .5em;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.titulo.active {
+    color: #ffffff;
+    text-shadow: 1px 2px 5px #ffffff60;
+}
