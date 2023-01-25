@@ -40,8 +40,6 @@ body {
 
 /* NAV */
 
-
-
 .nav {
     display: none;
     position: absolute;
@@ -67,11 +65,18 @@ nav ul li button:hover{
     color: #ffffff;
 }
 
-/* Home */
+/************* HOME *********/
 
-.home-container {
-    border-right: 1px solid var(--red);
+.home {
+    background-color: var(--grayishblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    box-shadow: 0px 10px 10px -5px var(--grayishblue);
 }
+
 
 .titulo {
     font-weight: normal;
@@ -86,4 +91,85 @@ nav ul li button:hover{
 .titulo.active {
     color: #ffffff;
     text-shadow: 1px 2px 5px #ffffff60;
+}
+
+/************* SCROLL DOWN *********/
+
+.scroll-down {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    margin-top: -25px;
+}
+
+/************* ABOUT *********/
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.about-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.row-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+/* ¨Presentacion */
+
+.presentacion {
+    text-align: center;
+}
+
+.presen-name {
+    font-weight: lighter;
+    font-size: 2.3em;
+}
+
+.presen-front {
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+.presentacion-texto {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+@media screen and (min-width: 992px) {
+
+    .about-container {
+        border-right: 1px solid var(--red);
+    }
+
+    .row-about {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .presentacion {
+        text-align: start;
+    }
+
+    .presen-name {
+        font-weight: lighter;
+        font-size: 2.5em;
+    }
+    
+    .presen-front {
+        font-weight: lighter;
+        font-size: 2.2em;
+    }
 }
