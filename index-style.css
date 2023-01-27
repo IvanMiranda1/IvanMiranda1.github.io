@@ -109,13 +109,13 @@ nav ul li button:hover{
     justify-content: center;
     align-items: center;
     height: 800px;
+    box-shadow: 0px 10px 10px -5px var(--darkgrayishblue);
 }
 
 .about-container {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-
 }
 
 .row-about {
@@ -147,8 +147,82 @@ nav ul li button:hover{
     padding: 10px;
 }
 
-@media screen and (min-width: 992px) {
+/* SKILLS */
 
+.skills {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25273e;
+    margin: 0;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-item {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-logos {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkgrayishblue);
+    box-shadow: inset 0 0 20px 15px var(--grayishblue);
+}
+
+.skills .prox {
+    margin-top: 200px;
+}
+
+/* Logos */
+
+.fa-html5 {
+    color: #f06529;
+}
+
+.fa-css3-alt {
+    color: #2965f1;
+}
+
+.fa-js {
+    color: #f0db4f;
+}
+
+/* CONTACTOS */
+
+.contactos {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a:hover {
+    color: var(--red);
+}
+
+footer ul li a:hover i {
+    color: var(--red);
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 992px) {
     .about-container {
         border-right: 1px solid var(--red);
     }
@@ -171,5 +245,41 @@ nav ul li button:hover{
     .presen-front {
         font-weight: lighter;
         font-size: 2.2em;
+    }
+    /* SKILLS */
+
+    .skills-container .row {
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-item:nth-child(3) .skills-logos{
+        width: 300px;
+    }
+
+
+    /* Contactos */
+
+    .contactos {
+        height: 100px;
+    }
+    
+    .contactos footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contactos footer ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+    }
+    
+    .contactos footer ul li:first-child{
+        margin-top: 15px;
     }
 }

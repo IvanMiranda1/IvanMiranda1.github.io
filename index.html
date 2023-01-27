@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- HEADER NAV -->
-    <header class="d-flex flex-column">
+    <header id="home" class="d-flex flex-column">
         <div class="d-flex justify-content-between align-items-center px-4">
             <div class="icon-container">
                 <i class="fa-solid fa-laptop-code"></i>
@@ -32,17 +32,17 @@
         </div>
         <nav class="text-center nav">
             <ul class="w-100">
-                <li class="item"><a href="#">Home</a></li>
-                <li class="item"><a href="#">About</a></li>
-                <li class="item"><a href="#">Skills</a></li>
-                <li class="item"><a href="#">Contact</a></li>
-                <li class="item"><button>Download CV</button></li>
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#about">About</a></li>
+                <li class="item"><a href="#skills">Skills</a></li>
+                <li class="item"><a href="#contactos">Contact</a></li>
+                <li class="item"><a href="cv/Curriculum Miranda Ivan.pdf" download="">Download CV</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- HOME -->
-    <section class="home">
+    <section id="home" class="home">
         <h1 class="titulo text-center display-1 mb-5">Portfolio</h1>
     </section>
     <!-- Scoll down -->
@@ -50,7 +50,7 @@
         <span>scroll down <i class="fa-solid fa-chevron-down"></i></span>
     </div>
     <!-- ABOUT -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="about-container container-md">
             <div class="row row-about">
                 <!-- imagen -->
@@ -82,18 +82,40 @@
         </div>
     </section>
 <!-- Skills -->
-    <section class="skills">
-        <p>Los lenguajes que manejo son: </p>
-        <div class="row">
-            <div class="col-6 d-flex flex-column fst-italic fw-semibold">
-                <p >HTML <i class="fa-brands fa-html5"></i></p>
-                <p>CSS <i class="fa-brands fa-css3-alt"></i></p>
+    <section id="skills" class="skills">
+        <div class="skills-container container-md">
+            <p class="display-6">Los lenguajes que manejo son:</p>
+            <div class="row row-cols-lg-2 gy-5 g-lg-0 w-100 display-6">
+                <div class="skills-item col-12">
+                    <div class="skills-logos">
+                        <p>HTML <i class="fa-brands fa-html5"></i></p>
+                    </div>
+                </div>
+                <div class="skills-item col-12">
+                    <div class="skills-logos">
+                        <p>CSS <i class="fa-brands fa-css3-alt"></i></p>
+                    </div>
+                </div>
+                <div class="skills-item col-12">
+                    <div class="skills-logos">
+                        <p>Javascript <i class="fa-brands fa-js"></i></p>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 d-flex flex-column fst-italic fw-semibold">
-                <p>Javascript <i class="fa-brands fa-js"></i></p>
-            </div>
+            <p class="prox">Proximamente <span class="fst-italic fw-semibold">Phyton <i class="fa-brands fa-python"></i></span> para el desarrollo de apps</p>
         </div>
-        <p>Tambien estoy aprendiendo de <span class="fst-italic fw-semibold">Phyton <i class="fa-brands fa-python"></i></span> para el desarrollo de apps</p>
+    </section>
+
+    <section id="contactos" class="contactos text-center">
+        <footer>
+            <ul>
+                <li><p>Contactos</p></li>
+                <li><a href="#">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#">Github <i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#">Email <i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#home">Home <i class="fa-solid fa-arrow-turn-up"></i></i></a></li>
+            </ul>
+        </footer>
     </section>
 
 
