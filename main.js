@@ -6,6 +6,8 @@ const front = document.querySelector('.frontend');
 const home = document.querySelector('.titulo');
 const separador = document.querySelector('.separador');
 
+const email = document.querySelector('.email')
+
 // Efecto maquina de escribir
 
 function typeWriting(text) {
@@ -32,15 +34,14 @@ function typeWriting(text) {
 
 function animacion(elemento, clase, tiempo){
     setInterval(()=>{
-        if(!elemento.classList.contains(clase)){
-            elemento.classList.add(clase)
-        } else {
+        if(elemento.classList.contains(clase)){
             elemento.classList.remove(clase)
+        } else {
+            elemento.classList.add(clase)
         }
     },tiempo)
 }
 animacion(home,"active",2000);
-animacion(separador,"active",2000);
 
 // Menu desplegable
 
@@ -52,3 +53,8 @@ buttonMenu.addEventListener('click', ()=>{
     }
 })
 
+
+email.addEventListener('click', ()=>{
+    const span = document.querySelector('.email span');
+    span.classList.remove('d-none')
+})
